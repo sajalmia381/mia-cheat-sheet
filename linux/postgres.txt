@@ -1,0 +1,29 @@
+# sudo -i -u postgres
+
+// Create database
+  $ createdb 'databse_name'
+
+// drop databse
+  $ dropdb "databse_name"
+
+// access databse
+  $ psql "database_name"
+
+// Switch Database
+  $ \c 'database_name'
+
+// Database List
+  $ psql --list
+
+* if authenticated psql databse
+  // Table Data
+     $ \d
+  // Database List
+     $ \l
+
+  // Drop Table
+     $ DROP TABLE "table_name";
+
+  // Access Table Data
+     $ SELECT * FROM "table_name";
+

@@ -1,0 +1,21 @@
+#    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+#    transition: all 300ms ease;
+#    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+#    transform: skewY(-9deg);
+
+** DropDown Manu **
+.ht-dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  left: 92%;
+  opacity: 0;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 120px;
+  z-index: 999;
+}

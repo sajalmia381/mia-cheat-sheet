@@ -1,0 +1,8 @@
+ For virtualenv page description with a text file
+# pip freeze > requierment_personal.txt
+
+
+--------------------
+1. mkvirtualenv folder_name --python=/usr/bin/python3.6 
+2. pip install -r requierment.txt
+3. python manage.py collectstatic

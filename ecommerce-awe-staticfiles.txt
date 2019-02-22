@@ -1,0 +1,2 @@
+1. create iam user and group [ to get access key id and secret access key ]
+2. s3 is storages

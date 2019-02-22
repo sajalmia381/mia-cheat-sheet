@@ -1,0 +1,8 @@
+		With GitBash
+-----------------------------------------------
+$ ssh-keygen -t rsa [ generate public and private key ]
+$ cat id_rsa.pub [ show public key in id_rsa.pub file ]
+
+              Other
+$ ssh <user_name>@<server> -p <Port>
+$ ssh protheme@195.201.110.22 -p 22 -i ssh_admin_access

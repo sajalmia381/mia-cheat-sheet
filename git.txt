@@ -1,0 +1,64 @@
+# git remote add origin repository_url
+# git push -u origin master
+
+
+#  git add -A [ * new worked file adding * ]
+#  git reset file-name [ * file disadding from added * ]
+
+===================== new Branch
+#  git branch new-brach-name
+#  git checkout new-branch [ * switch to new branch * ]
+
+====================== User info
+# git config --global user.name "Mona Lisa" [ set global user ] 
+
+================= shortcut
+#  git commit -am "Mesage" [ * add and commit * ]
+#  git checkout -b branch-name [ * create and switch * ]
+	
+================== delete branch
+#  git branch -d branch-name
+
+===================== Origin Check
+#  git remote show origin
+
+================= git commint History
+# git log
+
+====================== reset commit
+# git reset {commit id} --hard
+
+=============== delete Files
+# git rm file_name.ext [ remove from repostory and also remove from working files ]
+
+====================== Remove from comment
+# git commit --soft fine_name
+
+====================== Remove Remote
+# git remote rm remote_name
+
+====================== remove file from pushed commit
+
+$ git checkout file_name
+$ git commit -am "Message"
+  ------- Worked
+$ git rm --cache "file_name"
+
+
+======================== orign add and exist
+$ git remote add origin remote_repository_URL
+$ git push -u origin master
+
+========================== remove by gitignore files
+$ git rm --cached .gitignore
+
+========================== fresh and gitignore files data delete
+$ git rm -r --cached .
+
+======================= pull request
+$ git pull remote_name branch_name
+
+====================== git global information
+$ git config --global user.email "your_email"
+$ git config --global user.name "your_name"
+$ git config --list

@@ -1,0 +1,48 @@
+$ sudo add-apt-repository ppa:jonathonf/respository_name [ make repository ] 
+$ sudo apt-get update
+$ sudo apt-get install package_name
+
+============================================ Base CMD ==============================================
+
+$ pwd [ current location ]
+$ touch file_name.extension [ create a file ]
+$ nano file_name [ open file in terminal ]
+$ cat file_name [ show inside this file in terminal ]
+
+$ rm file_name [ remove file ]
+$ sudo rm -r filder_name [ folder remove importanct]
+
+==================================================================================================
+
+# where software
+  - which software_name [ where installed software ]
+
+# install tar.gz file
+  - tar xfz filename.tar.gz [ for unzip gz file ]
+  - tar xfz finename.tar.xz [ for unzip xz files ]
+  - go to bin directory
+  - hit ./file_name.sh
+
+# install .deb file
+  - go to file directory
+  - sudo dpkg -i file_name
+  
+  - sudo apt-get install -f [ if dependancy problem ]
+
+# how install python.tar.xz
+  - tar cvf Python-3.6.5.tar.xz
+  - cd Python-3.6.5 [go to python folder ]
+  - ./configure [ it's will configure python ]
+  - sudo make [ doing make file ]
+  - sudo make install [ installing make file ]
+   ============= Python install done Done
+  # if pip problem 
+  - sudo apt-get install libssl-dev openssl [ not sure and not working ]
+
+=====================================================================================================
+
+
+			linux Python
+-------------------------------------------------------
+$ (method no.1): python3 -m virtualenv folder_name or (method no.2): virtualenv folder_name --python=python3 
+

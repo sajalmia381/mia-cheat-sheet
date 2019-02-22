@@ -1,0 +1,6 @@
+       Setup app
+-------------------------
+$ npm install -g @angular/cli
+$ ng new myApp [ start a new app ]
+$ cd myApp
+$ ng serve --open [ runserver ]

@@ -1,0 +1,38 @@
+
+     For gulp 
+--------------------------
+$ npm install gulp -g [ must install gulp globally ]
+
+          node update
+----------------------------------
+$ npm cache clean -f [ clean all node cache ]
+$ npm install -g n
+$ n latest [ install latest version ]
+$ n 7.8.4 [ install specific version ]
+$ n stable [ install stable version]
+
+	 npm upgrade
+--------------------------------
+$ npm i npm@latest -g
+
+
+     gulp npm package download
+-----------------------------------
+$ npm install --save-dev package_name [ save in devDependencies ]
+$ npm install --save package_name [ save in Dependencies ]
+
+        node server
+----------------------------
+$ node server.js
+
+$ npm audit [ for details ]
+$ npm audit fix [ for fix ]
+
+	npm init
+----------------------------
+$ npm init --yes
+
+$ npm list -g [ global package list ]
+$ npm list --depth=0 [ list check ]
+
+

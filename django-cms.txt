@@ -1,0 +1,5 @@
+doc = http://docs.django-cms.org/en/latest/introduction/install.html#requirements
+
+$ mkdir src
+$ cd src
+$ djangocms -f -p . mysite [ installing app ]

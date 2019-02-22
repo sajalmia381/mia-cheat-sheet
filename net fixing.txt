@@ -1,0 +1,3 @@
+netsh int ip reset c:\resetlog.txt
+
+netsh interface tcp set global autotuning=disabled
