@@ -1,0 +1,3 @@
+----------------- Switch python from default python3 -------------
+	$ sudo rm /usr/bin/python3
+	$ sudo ln -s python-version(like python3.6) /usr/bin/python3
