@@ -3,3 +3,7 @@ Base cmd Link
 
  =============== Start develpment ================
 $ docker ps ( check donar container )
+
+
+$ sudo docker run IMAGE_NAME
+$ sudo docker ps -a
