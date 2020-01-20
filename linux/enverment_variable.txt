@@ -1,0 +1,12 @@
+=============== Set Envirment Variable ===========
+	$ export <varible_name>=<"value">
+	- Example: export SECRET_KEY="hjashdcnf435nfn4k35oo4c235nbrav234"
+
+================= Remove Varibale ==============
+	$ unset <varible_name>
+
+=================== Show Variable Value ===========
+	$ echo $<varible_name>
+
+==================== show all Varble ============
+	$ export
