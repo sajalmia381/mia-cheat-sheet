@@ -7,6 +7,7 @@
 
 =================== Show Variable Value ===========
 	$ echo $<varible_name>
+	$ printenv <varible_name>
 
 ==================== show all Varble ============
 	$ export
