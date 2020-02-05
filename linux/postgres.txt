@@ -1,7 +1,24 @@
 # sudo -i -u postgres
 
+// User List
+  $ \du
+  $ \du+  [ for More Details ]
+
+// Create User with password
+  $ create user <username> with password <'password'>;
+
+// Permission
+  $ alter role plx_userset client_encoding to 'utf8';
+  $ alter role plx_user set default_transaction_isolation to 'read committed';
+  $ alter role plx_user set timezone to 'UTC';
+  $ grant all privileges on database plx_db to plx_user;
+
+
 // Create database
-  $ createdb 'databse_name'
+  $ createdb 'databse_name' \\ for > 9.4 version
+  $ CREATE DATABASE <database_name>;
+  $ CREATE DATABASE <database_name> OWNER <username>; [ create with different user ]
+
 
 // drop databse
   $ dropdb "databse_name"
