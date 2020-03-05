@@ -1,0 +1,4 @@
+# ======== Show Package 
+	$ pipenv graph
+# ======== upgrade pipenv
+	$ pip install --user --upgrade pipenv
