@@ -1,0 +1,10 @@
+================= Base Cmd from other Person
+1. https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3#shorthand
+2. https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+================= Start Docker 
+# docker run -it --name <folder_name> python:<version/3.7> bash  -/ it will start bash with generate new project 
+
+================= Container
+$ sudo docker container ls -a  // List of all container
+$ sudo docker container rm <Container ID 1> <Container ID 2> // Remove container

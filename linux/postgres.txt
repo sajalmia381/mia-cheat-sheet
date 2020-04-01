@@ -44,3 +44,7 @@
   // Access Table Data
      $ SELECT * FROM "table_name";
 
+======================================
+// Drop Collum
+$ ALTER TABLE order_order DROP shipping_address_id; 
+
