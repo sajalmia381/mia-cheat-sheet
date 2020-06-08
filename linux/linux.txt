@@ -12,6 +12,10 @@ $ cat file_name [ show inside this file in terminal ]
 $ rm file_name [ remove file ]
 $ sudo rm -r filder_name [ folder remove importanct]
 
+===================== Create Folder ======================
+$ mkdir -p ./frontend/src/components
+$ mkdir -p ./frontend/{static,templates}/frontend
+
 ==================================================================================================
 
 # where software
