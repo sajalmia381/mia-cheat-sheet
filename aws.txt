@@ -3,3 +3,8 @@ $ scp -i ~/Downloads/plx_ecommerce.pem ~/Programming/Working/plx/src/* ubuntu@ec
 
 ------------ Copy Ec2 machine to local
 $ scp -i ~/Downloads/plx_ecommerce.pem ubuntu@ec2-54456.456456.456456.ap-sothcompute.amazonaws.com:~/plx_src ~/Programming/Working/plx/src
+
+
+-------------- copy full project local machine to ec2
+$ scp -r  -i ~/Downloads/plx_ecommerce.pem ~/Programming/Working/plx/src/* ubuntu@ec2-54456.456456.456456.ap-sothcompute.amazonaws.com:~/plx_src
+note: [-r] for full folder
