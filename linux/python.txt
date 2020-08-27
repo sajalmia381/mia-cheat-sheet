@@ -1,6 +1,10 @@
+-----------------------------install pip3 
+	$ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx
+
 ----------------- Switch python from default python3 -------------
 	$ sudo rm /usr/bin/python3
-	$ sudo ln -s python3.8 /usr/bin/python3
+	$ sudo ln -s python3.8 /usr/bin/python3 [ Switcher ]
+	$ sudo ln -sf /usr/bin/python3.6 /usr/bin/python3 [ Switcher ]
 
 ----------------- Install Python ------------------
 	$ sudo apt-get install python3.7
