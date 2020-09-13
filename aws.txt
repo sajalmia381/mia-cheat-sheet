@@ -8,3 +8,11 @@ $ scp -i ~/Downloads/plx_ecommerce.pem ubuntu@ec2-54456.456456.456456.ap-sothcom
 -------------- copy full project local machine to ec2
 $ scp -r  -i ~/Downloads/plx_ecommerce.pem ~/Programming/Working/plx/src/* ubuntu@ec2-54456.456456.456456.ap-sothcompute.amazonaws.com:~/plx_src
 note: [-r] for full folder
+
+
+----------------------- deploy django with nginx, dphene in EC2
+$ sudo apt install nginx supervisor
+$ sudo apt install python3-pip [ install pip3 ]
+$ sudo apt install python3-venv [ install virtualenv]
+$ python3 -m venv venv [ create virtualenv ]
+$ 

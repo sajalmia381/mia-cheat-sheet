@@ -1,4 +1,4 @@
-# sudo -i -u postgres
+$ sudo -i -u postgres
 
 // User List
   $ \du
@@ -25,6 +25,7 @@
 
 // access databse
   $ psql "database_name"
+  
 
 // Switch Database
   $ \c 'database_name'
@@ -48,3 +49,6 @@
 // Drop Collum
 $ ALTER TABLE order_order DROP shipping_address_id; 
 
+
+=========================== Acccress Data
+$ \dt
