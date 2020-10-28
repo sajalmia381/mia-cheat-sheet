@@ -1,0 +1,2 @@
+------------- New ssh Key
+$ ssh-keygen -t rsa -f ~/.ssh/my-new-key
