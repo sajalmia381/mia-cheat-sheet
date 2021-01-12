@@ -1,0 +1,8 @@
+## deploy hosting
+	$ npm install -g firebase-tools
+	$ yarn build or $ npm run build
+	$ firebase init
+		- choose hosting
+		- input build folder
+	$ firebase use <project_id> // Not needed
+	$ firebase deploy
