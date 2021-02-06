@@ -1,6 +1,14 @@
        Setup app
 -------------------------
-$ npm install -g @angular/cli
-$ ng new myApp [ start a new app ]
-$ cd myApp
-$ ng serve --open [ runserver ]
+	$ npm install -g @angular/cli
+	$ ng new myApp [ start a new app ]
+	$ cd myApp
+	$ ng serve --open [ runserver ]
+
+-------------------- Add routing in exist project
+	$ ng generate module app-routing --flat --module=app
+
+-------------------- Other Command
+	$ ng g c componentName (generate Component)[ g=generate c=component]
+	$ ng g c folderName/componentName (generate Component in specfic folder)
+	$ ng g m moduleName (generate module)[ g=generate m=module]
