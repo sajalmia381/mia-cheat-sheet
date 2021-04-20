@@ -1,0 +1,5 @@
+      Intstall docker
+$ sudo apt install docker.io // from docker official doc
+$ sudo systemctl enable --now docker [start automatically when new instance start]
+
+$ sudo usermod -aG docker username [use docker cmd without sudo] 
