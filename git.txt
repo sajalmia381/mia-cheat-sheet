@@ -68,4 +68,10 @@ $ git config --global user.email "your_email"
 $ git config --global user.name "your_name"
 $ git config --list
 
+===================== git pull
+$ git pull origin master
+
+===================== git pull congflict
+$ git merge master
+$ git pull origin master
 
