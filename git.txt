@@ -71,7 +71,7 @@ $ git config --list
 ===================== git pull
 $ git pull origin master
 
-===================== git pull congflict
+===================== git pull congflict solution
+// first commit all current changes
 $ git merge master
 $ git pull origin master
-
