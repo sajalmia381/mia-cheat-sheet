@@ -13,3 +13,6 @@
 	$ ng g c folderName/componentName (generate Component in specfic folder)
 	$ ng g m moduleName (generate module)[ g=generate m=module]
 	$ ng g m moduleName --routing (generate Module with router)
+	
+----------------------- Build -------------------
+	$ ng build --base-href="/lieblings" --deploy-url="/lieblings/"
