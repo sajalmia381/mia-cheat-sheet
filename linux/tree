@@ -1,0 +1,5 @@
+=============== Tree level
+  $ tree -L 1
+  
+============== Tree igrone particluer directory
+  $ tree -L 1 -I 'node_modules, more_folders'
