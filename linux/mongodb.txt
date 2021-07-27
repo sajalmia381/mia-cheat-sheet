@@ -1,0 +1,19 @@
+Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+## No.1 Start MongoDB
+  $ sudo systemctl start mongod
+  // If you receive an error similar to the following when starting mongod:
+  $ sudo systemctl daemon-reload
+  
+## No.2 Verify that MongoDB has started successfully
+  $ sudo systemctl status mongod
+  // You can optionally ensure that MongoDB will start following a system reboot by issuing the following command
+  $ sudo systemctl enable mongod
+## No.3 Stop MongoDB
+
+  $ sudo systemctl stop mongod
+## No.4 Restart MongoDB
+  $ sudo systemctl restart mongod
+  
+## No.5 Begin using MongoDB
+  $ mongo
