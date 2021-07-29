@@ -24,11 +24,36 @@
 # Delete collection
   $ db.collection_name.drop();
   
-# Add collection description
+# Insert data to collection
   $ db.collection_name.insert({"name": "sajal"})
+  $ db.users.insert([{name: ""sajal", age: 25},{name: "asik", age: 26}]) // a complete example
   
-# Collection Description
-  $ db.collection_name.find();
+# ---------------------------- Update collection
+  $ db.users.update({"_id" : ObjectId("6102f7736f7ff0217453f1f7")}, {$set: {age: 28}});
+  $ db.users.update({age: 28}, {$set: name: "new Name"});
+
+  
+## ---------------------------- Database Query
+# Get Collection Data
+  $ db.collection_name.find(); // get all data
+  $ db.collection_name.findOne(); // get first data
+  
+# Get Collection Data with pretty manner
+  $ db.collection_name.find().pretty();
+  
+# filter collection data
+  $ db.collection_name.find({age: 50}) // filter data with age of 50
+  $ db.users.find({age: {$gt: 20}}) // filter data with age greaterThan 20
+  
+# Conditon prefix
+  [$gt, $gte, $lt, $lte]
+  
+## ---------------------------- Database User
+# Create User
+  $ db.createUser({user: "sajal", pwd: "simpleLetter", roles: ["readWrite", "dbAdmin"]})
+# Delete User
+  $ db.dropUser("userName");
+
 
 -----------------------------------------
 
