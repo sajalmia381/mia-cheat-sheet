@@ -1,3 +1,37 @@
+# Mongo console
+  $ mongo
+  $ mongo --quiet // Quiet mode
+
+## ------------------------------ Database
+# Database List
+  $ show dbs;
+  
+# Create database
+  $ use database_name;
+# create connection
+  $ db.createCollection("username"); // with new collection database will show
+  
+# Drop database
+  $ db.dropDatabase();
+  
+## ---------------------------- Collection
+# Collection list
+  $ show connections;
+  
+# Create collection
+  $ db.createCollection("collection_name");
+ 
+# Delete collection
+  $ db.collection_name.drop();
+  
+# Add collection description
+  $ db.collection_name.insert({"name": "sajal"})
+  
+# Collection Description
+  $ db.collection_name.find();
+
+-----------------------------------------
+
 Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 ## No.1 Start MongoDB
