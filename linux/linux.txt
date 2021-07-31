@@ -1,3 +1,8 @@
+
+====================== TO fix: Error: listen EADDRINUSE: address already in use :::8000 
+$ sudo killall -9 node
+
+============================= 
 $ sudo add-apt-repository ppa:jonathonf/respository_name [ make repository ] 
 $ sudo apt-get update
 $ sudo apt-get install package_name
