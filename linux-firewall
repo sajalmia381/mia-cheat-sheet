@@ -3,3 +3,6 @@ $ sudo ufw enable
 $ sudo ufw disable
 $ sudo ufw allow 8000
 $ sudo ufw allow ssh
+
+$ sudo ufw app list
+$ sudo ufw allow 'Nginx HTTP'
