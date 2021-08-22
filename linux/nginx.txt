@@ -1,8 +1,2 @@
--------------------- Firewall -----------------------
-$ sudo ufw enable
-$ sudo ufw disable [default setted by system]
-$ sudo ufw allow 8000
-$ sudo ufw status
-
 -------------------- Instalal nginx --------------------
 sudo apt-get install nginx
