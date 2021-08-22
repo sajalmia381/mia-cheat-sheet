@@ -1,2 +1,14 @@
+-------------------- Separate directory for single project ---------------
+$ sudo mkdir -p /var/www/store-app/html
+$ sudo chown -R $USER:$USER /var/www/store-app/html
+
+
+------------------- Test nginx serve 
+$ sudo nginx -t
+
+------------------ configration nginx default file
+/etc/nginx/sites-available/default
+
+
 -------------------- Instalal nginx --------------------
 sudo apt-get install nginx
