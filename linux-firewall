@@ -1,0 +1,5 @@
+$ sudo ufw status
+$ sudo ufw enable
+$ sudo ufw disable
+$ sudo ufw allow 8000
+$ sudo ufw allow ssh
