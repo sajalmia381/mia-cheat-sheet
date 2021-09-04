@@ -53,7 +53,18 @@
   $ db.createUser({user: "sajal", pwd: "simpleLetter", roles: ["readWrite", "dbAdmin"]})
 # Delete User
   $ db.dropUser("userName");
-
+  
+## --------------------------- Export database
+# export all database
+  $ mongodump
+# export single databse
+  $ mongodump -d database_name
+#export single collection
+  $ mongodump -d database_name -c collection_name
+  
+## --------------------------- import database
+  $ mongorestore -d new_database_name /dump/store-api
+  $ mongorestore -d database_name -c collection_name /dump/users.bson
 
 -----------------------------------------
 
