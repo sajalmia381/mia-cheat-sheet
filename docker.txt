@@ -1,9 +1,0 @@
-Base cmd Link
- -  https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
-
- =============== Start develpment ================
-$ docker ps ( check donar container )
-
-
-$ sudo docker run IMAGE_NAME
-$ sudo docker ps -a

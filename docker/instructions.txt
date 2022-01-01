@@ -1,0 +1,65 @@
+# -------------------- Images
+# Image List
+  $ docker images [Image List]
+  
+# Remove Images
+  $ docker rmi imageId
+  - Remove with force
+  $ docker rmi -f imageId
+  
+# -------------------- Build own image from Dockerfile
+  $ docker build -t/--tag test-site:latest .
+
+# Create image from another images via tag
+  $ docker tag test-site:latest test-site:0.0.1
+
+# -------------------- containers
+# Container List
+  $ docker container ls
+  Or
+  $ docker ps 
+  - All docker stopped or running container
+  $ docker ps -a
+  - docker stop/quit container
+  $ docker ps -q
+  - All docker quit container
+  $ docker ps -aq
+  
+# Run docker container with local Image
+  $ docker run <imageName>:<tag>  [example: docker run nginx:latest]
+  - Detach mode (Commonly used)
+  $ docker run -d <imageName>:<tag>  example: docker run nginx:latest
+  - With port
+  $ docker run -d -p 8080:80 <imageName>:<tag>  [8080:80 point to localhost:8080]
+  -- Multiple port point
+  $ docker run -d -p 8080:80 -p 3000:80 <imageName>:<tag> [8080:80 point to localhost:8080, 3000:80 point to localhost:3000]
+  - Docker define container name
+  $ docker run --name <name> -d -p 8000:80 -p 3000:80 nginx:latest
+  #- Docker volumes [run with static website]
+  $ docker run --name test-site -v $(pwd)/website:/usr/share/nginx/html -d -p 8000:80 nginx:latest
+  -- Docker run with files readOnly mode
+  $ docker run --name test-site -v $(pwd)/website:/usr/share/nginx/html:ro -d -p 8000:80 nginx:latest
+  
+  - Run container from another running container
+  $ docker run --name test-site-copy -volumes-from test-site -d -p 8001:80 nginx
+  
+# Stop docker container
+  $ docker stop containerId/containerName [example: docker stop a55f91da2ccb]
+  
+# Remove completely container
+  $ docker rm containerId/containerName [example: docker -rm 096cb01d4a6a]
+  - Remove all quite container
+  $ docker rm $(docker ps -aq)
+  -- remove with force
+  $ docker rm -f $(docker ps -aq)
+  
+# ------------------- Container Bash
+  $ docker exec -it containerId/containerName /bin/sh
+  
+# ------------------- Container Logs
+  $ docker logs containerId/containerName
+  - Live monitor logs
+  $ docker logs -f/--follow containerId/containerName
+
+# ------------------- Container inspection
+  # docker inspect containerId/containerName
