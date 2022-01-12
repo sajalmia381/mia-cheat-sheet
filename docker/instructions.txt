@@ -63,3 +63,13 @@
 
 # ------------------- Container inspection
   # docker inspect containerId/containerName
+  
+  
+  
+# ------------------- Network
+  - Show available network
+  $ docker network ls
+  - inspect specific network
+  $ docker network inspect networkName
+  - ping container network
+  $ ping mongo

@@ -1,0 +1,37 @@
+# ------------- Start docker-compose services
+  $ docker-compose up -d
+  
+  - Pass docker-compose file
+  $ docker-compose -f docker-compose.prod.yml up d
+  
+  - startup single services
+  $ docker-compose up -d serviceName[node-app]
+  $ docker-compose up -d --no-deps serviceName[app] [skip depends service also]
+  
+   
+# ------------- Build docker-compose services
+  $ dicker-compose build
+
+# ------------- Stop docker-compose services
+  $ docker-compose stop
+
+# ------------- Delete docker services
+  $ docker-compose down
+  $ docker-compose down -v [delete unnecessary volumes, name volumes also(like database)]
+
+
+## -------------------------------- Mongo DB services
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: hello123
+      
+  - Goto mongodb container
+  $ docker exec -it containerName bash
+  
+  - to access mongodb username and password
+  $ mongo -u "root" -p "hello123"
+  
+  $docker exec -it node-mongo mongo -u root -p hello123 [direct from terminal]
