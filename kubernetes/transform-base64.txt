@@ -1,0 +1,2 @@
+Transform to base64
+  $ echo -n "<string_name>" | base64 [example: echo -n "simplePassword" | base64]
