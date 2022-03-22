@@ -72,6 +72,15 @@
 # restore with archive file
   $ docker exec -i store-mongo sh -c "mongorestore --archive --username your_username --password your_password" < ./store-api.archive
 
+----------------------------------------
+Access with admin user
+Step #1:
+  $ mongo
+Step #2:
+  $ use admin
+ Step #3:
+  $ db.auth("username", "password")
+
 -----------------------------------------
 
 Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
