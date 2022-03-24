@@ -35,3 +35,8 @@
   $ mongo -u "root" -p "hello123"
   
   $docker exec -it node-mongo mongo -u root -p hello123 [direct from terminal]
+  
+  
+  ## --------------------------------- Docke-compose install ubuntu arm base machine
+    $ sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-armv7" -o /usr/local/bin/docker-compose
+    $ sudo chmod +x /usr/local/bin/docker-compose
