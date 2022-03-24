@@ -64,13 +64,23 @@
   
 # export with archive [useable on docker]
   $ mongodump -d store-api --archive=store-api.archive
+
+# Export database with URL  
+$ mongodump --host=<example-domain.com> --port=27017 --username=<username> --authenticationDatabase=admin --out=/opt/backup/mongodump-2022-03-24
+  
   
 ## --------------------------- import database
   $ mongorestore -d new_database_name /dump/store-api
   $ mongorestore -d database_name -c collection_name /dump/users.bson
   
-# restore with archive file
+# restore using host
+  
+  $ mongorestore mongodb://<USERNAME>:<PASSWORD>@<IP_24.79.753.109>:<PORT> <DUMP_DATABASE_PATH>
+    Example: mongorestore mongodb://super_duper_admin:simple_pass@24.79.753.109:27017 /opt/backup/mongodump-2022-03-24
+  
+# restore with archive file in docker
   $ docker exec -i store-mongo sh -c "mongorestore --archive --username your_username --password your_password" < ./store-api.archive
+  
 
 ----------------------------------------
 Access with admin user
