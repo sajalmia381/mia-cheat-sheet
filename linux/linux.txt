@@ -1,4 +1,9 @@
 
+------------------------------------------------------------------------------------
+# Check file existance
+	- $ ls -ltr /home/klover/go/bin | grep gin
+
+
 ====================== TO fix: Error: listen EADDRINUSE: address already in use :::8000 
 $ sudo killall -9 node
 
@@ -54,4 +59,3 @@ $ mkdir -p ./frontend/{static,templates}/frontend
 			linux Python
 -------------------------------------------------------
 $ (method no.1): python3 -m virtualenv folder_name or (method no.2): virtualenv folder_name --python=python3 
-
