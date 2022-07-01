@@ -49,6 +49,8 @@
   [$gt, $gte, $lt, $lte]
   
 ## ---------------------------- Database User
+# Show all users
+  $ show users; // Make use you switch admin users
 # Create User
   $ db.createUser({user: "sajal", pwd: "simpleLetter", roles: ["readWrite", "dbAdmin"]})
 # Delete User
