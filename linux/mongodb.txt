@@ -53,6 +53,17 @@
   $ show users; // Make use you switch admin users
 # Create User
   $ db.createUser({user: "sajal", pwd: "simpleLetter", roles: ["readWrite", "dbAdmin"]})
+# Create admin user
+  $ db.createUser(
+    {
+      user: "sajalAdmin",
+      pwd: "abc123",
+      roles: [
+        { role: "userAdminAnyDatabase", db: "admin" },
+        { role: "readWriteAnyDatabase", db: "admin" }
+      ]
+    }
+  )
 # Delete User
   $ db.dropUser("userName");
   
