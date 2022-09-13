@@ -125,3 +125,11 @@ Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mon
   
 ## No.5 Begin using MongoDB
   $ mongo
+  
+--------------------------------------------------------
+## Access docker mongo container
+  $ docker exec -it containerName bash/sh
+## Access mongosh from docker
+  $ mongosh
+  $ mongosh -u <username> -p <password> // With root admin
+    - example: mongosh -u root -p mypassword
