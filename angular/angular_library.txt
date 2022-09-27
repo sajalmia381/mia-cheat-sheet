@@ -1,0 +1,22 @@
+------------------- Implement Angular library
+- Create Library
+  $ ng new projectName // If generate project without application => --create-application=false
+- Create angular Library
+  $ ng generate library libName
+  
+- Build and watch library
+  $ ng build --watch
+
+------------------ Publish the repo
+- Step 1. Build application
+  $ ng build
+- Step 2. go to dist directory
+  $ cd ./dist/libName
+- Step 3. Publish
+  $ npm publish
+
+
+
+------------------- Authentication
+- npm login
+  $ npm login
