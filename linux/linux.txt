@@ -1,6 +1,9 @@
 ============================================ Permissions ==============================================
 # Folder Permission
   $ sudo chown ubuntu:ubuntu /opt/folderName
+  
+# CLI
+  $ sudo usermod -aG docker $USER
  
 
 ------------------------------------------------------------------------------------
