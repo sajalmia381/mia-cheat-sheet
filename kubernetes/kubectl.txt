@@ -4,45 +4,45 @@
 
 ------------- Deployment CRUD
   - Get Deployment
-  $ kubectl get deployment deploymentName 
-  $ kubectl get deployment deploymentName -o yaml [get deployment with yaml format]
+    $ kubectl get deployment deploymentName 
+    $ kubectl get deployment deploymentName -o yaml [get deployment with yaml format]
   - Create deployment
-  $ kubectl create deployment <name> --image:<dockerImage> [example: kubectl create deployment nginx-server --image=nginx]
+    $ kubectl create deployment <name> --image:<dockerImage> [example: kubectl create deployment nginx-server --image=nginx]
   
   - Creating deployment effect
     -- Check deployment
-    $ kubectl get deployment
+      $ kubectl get deployment
     -- Check pod
-    $ kubectl get pod
+      $ kubectl get pod
     -- Check replicaset
-    $ kubectl get replicaset
+      $ kubectl get replicaset
   - Edit deployment
-  $ kubectl edit deployment deploymentName [example: kubectl edit deployment nginx-server]
+    $ kubectl edit deployment deploymentName [example: kubectl edit deployment nginx-server]
   - Delete deployment
-  $ kubectl delete deployment deploymentName [example: kubectl delete deployment nginx-server]
+    $ kubectl delete deployment deploymentName [example: kubectl delete deployment nginx-server]
   
   # ------------------ With configuration file
   - Create deployment with yml file
-  $ kubectl apply -f deployment-db.yml
+    $ kubectl apply -f deployment-db.yml
   - Delete deployment
-  $ kubectl delete deployment-db.yml
+    $ kubectl delete deployment-db.yml
 
 ------------------ Pod
   - Check pod
-  $ kubectl get pod 
-  $ kubectl get p -o wide [Get more information]
+    $ kubectl get pod 
+    $ kubectl get p -o wide [Get more information]
   - Pod Log
-  $ kubectl log podName [example: kubectl logs mongo-database-6b4654fcf8-md95p]
+    $ kubectl log podName [example: kubectl logs mongo-database-6b4654fcf8-md95p]
   - Pod Bash/shall
-  $ kubectl exec -it mongo-database-6b4654fcf8-md95p /bin/bash
-  $ kubectl exec -it mongo-database-6b4654fcf8-md95p bash
-  $ kubectl exec -it mongo-database-6b4654fcf8-md95p /bin/sh
+    $ kubectl exec -it mongo-database-6b4654fcf8-md95p /bin/bash
+    $ kubectl exec -it mongo-database-6b4654fcf8-md95p bash
+    $ kubectl exec -it mongo-database-6b4654fcf8-md95p /bin/sh
 
 ------------------ Service
   - Check service
-  $ kubectl get service
+    $ kubectl get service
   - service information
-  $ kubectl describe service serviceName
+    $ kubectl describe service serviceName
 
 
 ///////////
@@ -55,7 +55,12 @@
   
 ------------- get Service
   $ kubectl get svc
-
+  
+===================================== Bulk Action =================================
+# ------------------------- Apply
+  $ kubectl apply -f ./
+# ------------------------- Delete
+  $ kubectl delete -f ./
   
 ====================================== minikube ================================
 # -------------- Start minikube
