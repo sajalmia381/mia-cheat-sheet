@@ -1,3 +1,12 @@
+## Create New Angular Project
+
+## 01. Step
+```bash
+npx create-nx-workspace
+
+
+```
+
 ## Library
 
 ### Generate Component in library
