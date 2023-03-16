@@ -1,0 +1,9 @@
+# Create file with .sh extension
+  $ touch my-script.sh
+
+# vim my-script.sh
+  - # This is shall script
+  - echo "Welcome to shall script
+  
+# Run my-script.sh file
+  $ bash my-script.sh
