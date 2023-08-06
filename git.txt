@@ -25,7 +25,12 @@
 ================= git commint History
 # git log
 
+================ Copy changes form commits to another branch
+$ git checkout <anotherBranch>
+$ git cherry-pick <commitId> <commitId>
+
 ====================== reset commit
+$ git reset HEAD~ [rest preview commit which is not pushed]
 # git reset {commit id} --hard
 
 =============== delete Files
