@@ -136,7 +136,7 @@ Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mon
 
 ---------------------------------------------------------
 # Access Mongodb from Kubernetes Cluster
-## Access server and create bridge with local machine
+## Access the server and create a tunnel
   $ sudo ssh -i ~/directory/ssh-key/id_rsa <username>@<server> -L 27048:localhost:27048
 ## Forward mongo pod port
   $ kubectl port-forward -n <namespace> <pod-name> 27048:27017
