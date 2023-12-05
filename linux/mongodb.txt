@@ -133,3 +133,13 @@ Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mon
   $ mongosh
   $ mongosh -u <username> -p <password> // With root admin
     - example: mongosh -u root -p mypassword
+
+---------------------------------------------------------
+# Access Mongodb from Kubernetes Cluster
+## Access server and create bridge with local machine
+  $ sudo ssh -i ~/directory/ssh-key/id_rsa <username>@<server> -L 27048:localhost:27048
+## Forward mongo pod port
+  $ kubectl port-forward -n <namespace> <pod-name> 27048:27017
+## Acces from mongo compass string
+  - mongodb://<username>:<server>@localhost:27048/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
+
