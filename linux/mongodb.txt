@@ -1,6 +1,6 @@
 # Mongo console
-  $ mongo
-  $ mongo --quiet // Quiet mode
+  $ mongosh
+  $ mongosh --quiet // Quiet mode
 
 ## ------------------------------ Database
 # Database List
@@ -24,13 +24,14 @@
 # Delete collection
   $ db.collection_name.drop();
   
-# Insert data to collection
+# Insert data into collection
   $ db.collection_name.insert({"name": "sajal"})
   $ db.users.insert([{name: ""sajal", age: 25},{name: "asik", age: 26}]) // a complete example
   
 # ---------------------------- Update collection
   $ db.users.update({"_id" : ObjectId("6102f7736f7ff0217453f1f7")}, {$set: {age: 28}});
-  $ db.users.update({age: 28}, {$set: name: "new Name"});
+  $ db.users.update({age: 28}, {$set: {name: "new Name"}});
+  $ db.todos.updateMany({completed: true}, {$set: {status: "COMPLETED"}})
 
   
 ## ---------------------------- Database Query
@@ -38,10 +39,10 @@
   $ db.collection_name.find(); // get all data
   $ db.collection_name.findOne(); // get first data
   
-# Get Collection Data with pretty manner
+# Get Collection Data in a pretty manner
   $ db.collection_name.find().pretty();
   
-# filter collection data
+# Filter collection data
   $ db.collection_name.find({age: 50}) // filter data with age of 50
   $ db.users.find({age: {$gt: 20}}) // filter data with age greaterThan 20
   
@@ -70,7 +71,7 @@
 ## --------------------------- Export database
 # export all database
   $ mongodump
-# export single databse
+# export single database
   $ mongodump -d database_name
 #export single collection
   $ mongodump -d database_name -c collection_name
@@ -106,7 +107,7 @@ Step #2:
 
 -----------------------------------------
 
-Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+For Ubuntu installation reffer Link: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 ## No.1 Start MongoDB
   $ sudo systemctl start mongod
@@ -127,7 +128,7 @@ Ubuntu install reffer Link: https://docs.mongodb.com/manual/tutorial/install-mon
   $ mongo
   
 --------------------------------------------------------
-## Access docker mongo container
+## Access the docker mongo container
   $ docker exec -it containerName bash/sh
 ## Access mongosh from docker
   $ mongosh
