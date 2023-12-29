@@ -10,8 +10,11 @@
 # inspect the new build
   - docker buildx inspect --bootstrap
 
-# Build 
-  - docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t <store-api:latest> .
+# Build and push
+  - docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t <store-api:latest> --push .
+
+# Run specific architect image
+  - docker run --name store-api -d - p 8000:8000 <store-api:latest>:<943e28233b51>
 
 
 # REF
