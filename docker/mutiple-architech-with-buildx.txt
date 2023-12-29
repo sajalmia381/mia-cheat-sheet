@@ -1,0 +1,18 @@
+# Show all buildx
+  - docker buildx ls
+  
+# Create new buildx
+  - docker buildx create --name <builderName>
+
+# Use new build
+  - docker buildx use <builderName>
+
+# inspect the new build
+  - docker buildx inspect --bootstrap
+
+# Build 
+  - docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t <store-api:latest> .
+
+
+# REF
+https://www.youtube.com/watch?v=hWSHtHasJUI
