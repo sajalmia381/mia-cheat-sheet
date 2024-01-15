@@ -111,5 +111,5 @@ Step3: Pull all tags and commit
 Step4: $ git filter-repo --replace-text /home/sajal/Programming/private/api-secret-replace.txt --force
 
 Step5: Push to all tags and commit
-	$ git push --git --force git@github.com:username/repo-name.git
+	$ git push --tags --force git@github.com:username/repo-name.git
 	$ git push --all --force git@github.com:username/repo-name.git
