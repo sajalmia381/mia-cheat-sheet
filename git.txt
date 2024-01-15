@@ -50,7 +50,7 @@ $ git commit -am "Message"
 $ git rm --cache "file_name"
 
 
-======================== orign add and exist
+======================== origin add and exist
 $ git remote add origin remote_repository_URL
 $ git push -u origin master
 
@@ -63,10 +63,11 @@ $ git rm -r --cached .
 ======================= pull request
 $ git pull remote_name branch_name [ update local machine code from server ]
 
-======================= Git releases ======================
+======================= Git tag and releases ======================
 $ git tag -a v1.0 -m "development version 1.0" [ add git ]
 $ git push origin v1.0 [ release push to server]
 $ git tag -d v1.4 [ delete release tag ]
+$ git push origin --delete v10.0.0 [Remove tag from remote]
 
 $ git checkout -b new_branch v1.x.x [Create a new branch from tag]
 
