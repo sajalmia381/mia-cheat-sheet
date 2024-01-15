@@ -68,7 +68,7 @@ $ git tag -a v1.0 -m "development version 1.0" [ add git ]
 $ git push origin v1.0 [ release push to server]
 $ git tag -d v1.4 [ delete release tag ]
 
-$ git checkout -b new_branch v1.x.x [Create new branch from tag]
+$ git checkout -b new_branch v1.x.x [Create a new branch from tag]
 
 ====================== git global information
 $ git config --global user.email "your_email"
@@ -91,3 +91,21 @@ $ git filter-branch -f "git rm -rf --cached --ignore-unmatch fileName" -- --all
 $ git push --force-with-lease --all
 // For brach lease
 $ git push --force-with-lease origin $BRANCH
+
+
+
+========================= Git removes all sensitive data from all commits, all tags
+Step1: install filter repo
+	- $ sudo apt install git-filter-repo
+
+Step2: create a file that matches Regular expression with secret data 
+	- Example: filename.txt
+	- File content:
+	```
+	oldSecret==>new_secret
+	oldSecret2==>new_secret_2
+	```
+Step3: $ git filter-repo --replace-text /home/sajal/Programming/private/api-secret-replace.txt --force
+Step4: Push to all tags and commit
+	$ git push --git --force git@github.com:username/repo-name.git
+	$ git push --all --force git@github.com:username/repo-name.git
