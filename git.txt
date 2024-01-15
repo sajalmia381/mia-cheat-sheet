@@ -105,7 +105,11 @@ Step2: create a file that matches Regular expression with secret data
 	oldSecret==>new_secret
 	oldSecret2==>new_secret_2
 	```
-Step3: $ git filter-repo --replace-text /home/sajal/Programming/private/api-secret-replace.txt --force
-Step4: Push to all tags and commit
+Step3: Pull all tags and commit
+	$ git pull --all --tags
+
+Step4: $ git filter-repo --replace-text /home/sajal/Programming/private/api-secret-replace.txt --force
+
+Step5: Push to all tags and commit
 	$ git push --git --force git@github.com:username/repo-name.git
 	$ git push --all --force git@github.com:username/repo-name.git
