@@ -64,6 +64,7 @@ $ git rm -r --cached .
 $ git pull remote_name branch_name [ update local machine code from server ]
 
 ======================= Git tag and releases ======================
+$ git tag -n [ Git tag list with message ]
 $ git tag -a v1.0 -m "development version 1.0" [ add git ]
 $ git push origin v1.0 [ release push to server]
 $ git tag -d v1.4 [ delete release tag ]
