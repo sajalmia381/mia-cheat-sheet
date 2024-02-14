@@ -1,5 +1,5 @@
 # make user ubuntu with docker Group permission
-  $ sudo usermod -G docker ubuntu
+  $ sudo usermod -G docker $USER
   
 # -------------------- Images
 # Image List
