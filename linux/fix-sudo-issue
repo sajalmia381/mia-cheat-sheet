@@ -1,0 +1,13 @@
+01. Access as Sudo with poassword 
+$ su root
+
+02. Edit sudoers file
+$ nano sudoers
+
+```file
+...
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+sajal	ALL=(ALL:ALL) ALL
+...
+```
