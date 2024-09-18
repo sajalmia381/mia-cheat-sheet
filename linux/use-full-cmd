@@ -1,0 +1,5 @@
+$ sudo -i
+$ su -
+$ su root // access with root
+
+$ uname -sr // Kernet version
