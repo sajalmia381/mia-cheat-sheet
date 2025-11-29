@@ -1,0 +1,2 @@
+alias kd='kubectl --kubeconfig="/home/sajal/kube-config/dev-kubeconfig.yaml"'
+alias ks='kubectl --kubeconfig="/home/sajal/kube-config/prod-kubeconfig.yaml"'
